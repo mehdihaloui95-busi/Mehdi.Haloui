@@ -8,7 +8,7 @@
 
 ---
 
-## 🖼️ Images
+![Logo Aéroworld](Logo%20aéroworld.png)
 - 🧠 Carte mentale du projet  
 - 📊 Capture d’écran du tableau de bord Power BI (profil)  
 - 📑 Cahier des charges Aéroworld  
