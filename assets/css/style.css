@@ -1,0 +1,51 @@
+/* assets/css/style.css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap');
+
+:root{
+  --bg:#151a1e; --panel:#1e242b; --text:#f5f7fa; --muted:#b7c0c8;
+  --accent:#4cc2ff; --accent-2:#50e3c2;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Montserrat,system-ui,Segoe UI,Roboto,sans-serif}
+a{color:var(--accent);text-decoration:none}
+a:hover{opacity:.85}
+.container{max-width:1180px;margin:auto;padding:24px}
+
+nav.top{
+  background:rgba(0,0,0,.3);backdrop-filter:blur(6px);
+  position:sticky;top:0;z-index:5;border-bottom:1px solid #222;
+}
+nav.top .inner{display:flex;align-items:center;gap:18px;padding:12px 24px;max-width:1180px;margin:auto}
+nav.top a{color:#dbe7ef;font-weight:600}
+nav.top a.btn{margin-left:auto;background:var(--accent);color:#07253a;
+  padding:10px 14px;border-radius:10px;font-weight:800}
+
+.hero{
+  min-height:56vh;display:grid;place-items:center;text-align:center;
+  background:linear-gradient(180deg,#12161a 0%, #0f1418 60%, transparent 100%);
+  border-bottom:1px solid #222
+}
+.hero h1{
+  font-size:clamp(34px,6vw,72px);letter-spacing:6px;margin:0 0 10px;font-weight:800
+}
+.hero p{color:var(--muted);font-size:18px;margin:0}
+.hero .chevron{margin-top:26px;font-size:32px;color:var(--accent-2)}
+
+.section{padding:48px 0;border-bottom:1px solid #222}
+.section h2{margin:0 0 20px;font-size:28px;letter-spacing:2px}
+
+.grid{display:grid;gap:22px}
+.grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+.grid.cards{grid-template-columns:repeat(auto-fill,minmax(280px,1fr))}
+.card{
+  background:var(--panel);border:1px solid #242b33;border-radius:16px;overflow:hidden
+}
+.card img{width:100%;display:block}
+.card .p{padding:14px 16px;color:var(--muted)}
+.badge{display:inline-block;background:#0d3140;color:#bfe9ff;border:1px solid #164a5e;padding:4px 8px;border-radius:999px;font-size:12px;margin-right:8px}
+
+.footer{padding:22px 0;color:#93a0aa;text-align:center}
+.btn-primary{
+  display:inline-block;background:var(--accent);color:#052133;padding:12px 18px;border-radius:12px;font-weight:800
+}
+.link-muted{color:var(--muted)}
